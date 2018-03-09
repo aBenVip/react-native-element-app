@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "react-native-elements-app",
+    "name": "Test",
     "description": "A demo app for React Native Elements UI Library",
-    "slug": "react-native-elements-app",
+    "slug": "Test",
     "privacy": "public",
     "sdkVersion": "23.0.0",
     "version": "1.0.0",
@@ -21,7 +21,11 @@
       "config": "rn-cli.config.js"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dgcredit.Test"
+    },
+    "android": {
+      "package": "com.dgcredit.Test"
     }
   }
 }

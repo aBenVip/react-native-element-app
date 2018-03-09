@@ -22,15 +22,15 @@ const ListsTab = StackNavigator({
     path: '/',
     navigationOptions: ({ navigation }) => ({
       title: 'Lists',
-      headerLeft: (
-        <Icon
-          name="menu"
-          size={30}
-          type="entypo"
-          style={{ paddingLeft: 10 }}
-          onPress={() => navigation.navigate('DrawerOpen')}
-        />
-      ),
+      // headerLeft: (
+      //   <Icon
+      //     name="menu"
+      //     size={30}
+      //     type="entypo"
+      //     style={{ paddingLeft: 10 }}
+      //     onPress={() => navigation.navigate('DrawerOpen')}
+      //   />
+      // ),
     }),
   },
   Lists_Detail: {

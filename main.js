@@ -1,7 +1,7 @@
 import Expo from 'expo';
 import React from 'react';
 import { View, Image, Dimensions } from 'react-native';
-import { DrawerNavigator, DrawerItems } from 'react-navigation';
+import {DrawerNavigator, DrawerItems, StackNavigator} from 'react-navigation';
 
 import Components from './src/drawer/components';
 import Ratings from './src/drawer/ratings';
@@ -28,6 +28,18 @@ const CustomDrawerContentComponent = props => (
     </View>
   </View>
 );
+
+const Component = StackNavigator(
+    {
+        Components: {
+            path: '/components',
+            screen: Components,
+        }
+    },{
+        headerMode: 'none',
+    }
+);
+
 
 const MainRoot = DrawerNavigator(
   {
@@ -76,4 +88,4 @@ const MainRoot = DrawerNavigator(
   }
 );
 
-Expo.registerRootComponent(MainRoot);
+Expo.registerRootComponent(Component);

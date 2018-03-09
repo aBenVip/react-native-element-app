@@ -26,28 +26,28 @@ import colors from 'HSColors';
 
 const users = [
   {
-    name: 'brynn',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg',
+    name: 'Item1',
+    avatar: '../images/man.png',
   },
   {
-    name: 'thot leader',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/evagiselle/128.jpg',
+    name: 'Item2',
+    avatar: '../images/man.png',
   },
   {
-    name: 'jsa',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg',
+    name: 'Item3',
+    avatar: '../images/man.png',
   },
   {
-    name: 'talhaconcepts',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/talhaconcepts/128.jpg',
+    name: 'Item4',
+    avatar: '../images/man.png',
   },
   {
-    name: 'andy vitale',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/andyvitale/128.jpg',
+    name: 'Item5',
+    avatar: '../images/man.png',
   },
   {
-    name: 'katy friedson',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg',
+    name: 'Item6',
+    avatar: '../images/man.png',
   },
 ];
 
@@ -55,52 +55,52 @@ const log = () => console.log('this is an example method');
 
 const list1 = [
   {
-    title: 'Appointments',
+    title: 'Test1',
     icon: 'av-timer',
   },
   {
-    title: 'Trips',
+    title: 'Test2',
     icon: 'flight-takeoff',
   },
   {
-    title: 'Passwords',
+    title: 'Test3',
     icon: 'fingerprint',
   },
   {
-    title: 'Pitches',
+    title: 'Test4',
     icon: 'lightbulb-outline',
   },
   {
-    title: 'Updates',
+    title: 'Test5',
     icon: 'track-changes',
   },
 ];
 
 const list2 = [
   {
-    name: 'Amy Farha',
-    avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-    subtitle: 'Vice President',
+    name: 'Item1',
+    avatar_url: '../images/man.png',
+    subtitle: 'SubTitle',
   },
   {
-    name: 'Chris Jackson',
-    avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-    subtitle: 'Vice Chairman',
+    name: 'Item2',
+    avatar_url: '../images/man.png',
+    subtitle: 'SubTitle',
   },
   {
-    name: 'Amanda Martin',
-    avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg',
-    subtitle: 'CEO',
+    name: 'Item3',
+    avatar_url: '../images/man.png',
+    subtitle: 'SubTitle',
   },
   {
-    name: 'Christy Thomas',
-    avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg',
-    subtitle: 'Lead Developer',
+    name: 'Item4',
+    avatar_url: '../images/man.png',
+    subtitle: 'SubTitle',
   },
   {
-    name: 'Melissa Jones',
-    avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/nuraika/128.jpg',
-    subtitle: 'CTO',
+    name: 'Item5',
+    avatar_url: '../images/man.png',
+    subtitle: 'SubTitle',
   },
 ];
 
@@ -168,7 +168,7 @@ class Icons extends Component {
                 title={l.name}
                 titleStyle={{color: 'red'}}
                 subtitle={l.subtitle}
-                rightTitle='11:00am'
+                rightTitle='Date'
                 rightTitleStyle={{color: 'green'}}
               />
             ))
@@ -177,17 +177,16 @@ class Icons extends Component {
         <List>
           <ListItem
             roundAvatar
-            title="Limited supply! Its like digital gold!"
+            title="Rating"
             subtitle={
               <View style={styles.subtitleView}>
                 <Image
                   source={require('../images/rating.png')}
                   style={styles.ratingImage}
                 />
-                <Text style={styles.ratingText}>5 months ago</Text>
+                <Text style={styles.ratingText}>Date</Text>
               </View>
             }
-            avatar={require('../images/avatar1.jpg')}
           />
         </List>
         <List>
@@ -198,10 +197,10 @@ class Icons extends Component {
         </List>
         <View style={[styles.headerContainer, {backgroundColor: '#18CDCA', marginTop: 20}]}>
           <Icon color="white" name="hdd-o" size={62} type="font-awesome" />
-          <Text style={styles.heading}>Cards</Text>
+          <Text style={styles.heading}>Card Group</Text>
         </View>
         <View style={styles.container}>
-          <Card title="CARD WITH DIVIDER">
+          <Card title="List Group">
             {users.map((u, i) => {
               return (
                 <View key={i} style={styles.user}>
@@ -215,7 +214,7 @@ class Icons extends Component {
               );
             })}
           </Card>
-          <Card containerStyle={{ marginTop: 15 }} title="FONTS">
+          <Card containerStyle={{ marginTop: 15 }} title="Font Group">
             <Text style={styles.fonts} h1>h1 Heading</Text>
             <Text style={styles.fonts} h2>h2 Heading</Text>
             <Text style={styles.fonts} h3>h3 Heading</Text>
@@ -224,14 +223,14 @@ class Icons extends Component {
           </Card>
           <Card
             containerStyle={{ marginTop: 15, marginBottom: 15 }}
-            title="TILES"
+            title="Image Group"
           >
             <View>
               <Tile
                 imageSrc={{
                   uri: 'https://static1.squarespace.com/static/5477887ae4b07c97883111ab/5478c08fe4b0fa4e5a552532/57e101f3579fb32aef30d4af/1491426124625/Porthmeor+Sunset+21.jpg',
                 }}
-                title="When I admire the wonders of a sunset or the beauty of the moon, my soul expands in the worship of the creator."
+                title="Desc"
                 titleStyle={{ fontSize: 20 }}
                 featured
                 caption="Mahatma Gandhi"
@@ -263,7 +262,7 @@ class Icons extends Component {
                 imageSrc={{
                   uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/320px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg',
                 }}
-                title="Half Dome, Yosemite"
+                title="Title"
                 titleStyle={{ fontSize: 20 }}
                 activeOpacity={1}
                 width={310}
@@ -276,21 +275,11 @@ class Icons extends Component {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <Text style={{ color: 'green' }}>Visit</Text>
-                  <Text style={{ color: 'blue' }}>Find out More</Text>
+                  <Text style={{ color: 'green' }}>Test1</Text>
+                  <Text style={{ color: 'blue' }}>Test2</Text>
                 </View>
               </Tile>
             </View>
-          </Card>
-          <Card
-            containerStyle={{
-              marginTop: 15,
-              marginBottom: 15,
-              height: 230,
-              paddingLeft: 10,
-            }}
-            title="AVATARS"
-          >
           </Card>
         </View>
       </ScrollView>

@@ -24,15 +24,15 @@ const InputTab = StackNavigator({
     path: '/',
     navigationOptions: ({ navigation }) => ({
       title: 'Input',
-      headerLeft: (
-        <Icon
-          name="menu"
-          size={30}
-          type="entypo"
-          style={{ paddingLeft: 10 }}
-          onPress={() => navigation.navigate('DrawerOpen')}
-        />
-      ),
+      // headerLeft: (
+      //   <Icon
+      //     name="menu"
+      //     size={30}
+      //     type="entypo"
+      //     style={{ paddingLeft: 10 }}
+      //     onPress={() => navigation.navigate('DrawerOpen')}
+      //   />
+      // ),
     }),
   },
   Input_Detail: {

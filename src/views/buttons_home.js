@@ -23,15 +23,17 @@ class Buttons extends Component {
             <Icon color="white" name="rocket" size={62} />
             <Text style={styles.heading}>Buttons</Text>
           </View>
-          <Button containerStyle={{marginVertical: 10}} />
           <Button
-            text ='LOG IN'
+              text ='Test'
+              containerStyle={{marginVertical: 10}} />
+          <Button
+            text ='Test1'
             buttonStyle={{height: 50, width: 250, backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30}}
             containerStyle={{marginVertical: 10}}
             textStyle={{fontWeight: 'bold'}}
           />
           <Button
-            text ='Log in'
+            text ='Test2'
             loading={false}
             loadingProps={{size: 'small', color: 'white'}}
             buttonStyle={{height: 50, width: 230, backgroundColor: 'rgba(111, 202, 186, 1)', borderRadius: 5}}
@@ -41,7 +43,7 @@ class Buttons extends Component {
             underlayColor="transparent"
           />
           <Button
-            text="Add to Cart"
+            text="Test3"
             textStyle={{fontWeight: 'bold', fontSize: 18}}
             ViewComponent={require('expo').LinearGradient}
             linearGradientProps={{
@@ -62,20 +64,20 @@ class Buttons extends Component {
             iconContainerStyle={{marginLeft: 5}}
           />
           <Button
-            text="Request an agent"
+            text="Button1"
             textStyle={{fontWeight: '500'}}
             buttonStyle={{backgroundColor: 'rgba(199, 43, 98, 1)', width: 275, height: 45, borderColor: 'transparent', borderWidth: 0}}
             containerStyle={{marginTop: 10}}
           />
           <Button
-            text="SIGN UP"
+            text="Button2"
             disabled={true}
             textStyle={{fontWeight: '700'}}
             buttonStyle={{backgroundColor: 'rgba(92, 99,216, 1)', width: 300, height: 45, borderColor: 'transparent', borderWidth: 0, borderRadius: 5}}
             containerStyle={{marginTop: 20}}
           />
           <Button
-            text="SIGN UP"
+            text="Button3"
             loading={true}
             loadingProps={{size: 'large', color: 'rgba(111, 202, 186, 1)'}}
             textStyle={{fontWeight: '700'}}
@@ -84,7 +86,7 @@ class Buttons extends Component {
           />
           <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
             <Button
-              text="HOME"
+              text="Button4"
               icon={
                 <Icon
                   name='home'
@@ -98,7 +100,7 @@ class Buttons extends Component {
               containerStyle={{marginTop: 20}}
             />
             <Button
-              text="PROFILE"
+              text="Button5"
               icon={
                 <Icon
                   name='user'
@@ -115,12 +117,12 @@ class Buttons extends Component {
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
             <Button
-              text="Basic Button"
+              text="Button6"
               buttonStyle={{backgroundColor: 'rgba(78, 116, 289, 1)', borderRadius: 3}}
               containerStyle={{marginTop: 20}}
             />
             <Button
-              text="Outline Button"
+              text="Button7"
               buttonStyle={{backgroundColor: 'white', borderColor: 'rgba(78, 116, 289, 1)', borderWidth: 1}}
               containerStyle={{marginTop: 20}}
               textStyle={{color: 'rgba(78, 116, 289, 1)'}}
@@ -128,14 +130,14 @@ class Buttons extends Component {
           </View>
           <View style={{justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row'}}>
             <Button
-              text="HOME"
+              text="Button8"
               loading={true}
               textStyle={{fontWeight: '700'}}
               buttonStyle={{backgroundColor: 'rgba(111, 202, 186, 1)', width: 100, height: 30, borderColor: 'transparent', borderWidth: 0, borderRadius: 30}}
               containerStyle={{marginTop: 20}}
             />
             <Button
-              text="Clear Button"
+              text="Button9"
               clear
               textStyle={{color: 'rgba(78, 116, 289, 1)'}}
               containerStyle={{marginTop: 20}}
@@ -143,19 +145,19 @@ class Buttons extends Component {
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
             <Button
-              text="Light"
+              text="Button10"
               buttonStyle={{backgroundColor: 'rgba(244, 244, 244, 1)', width: null, height: 40, borderRadius: 3}}
               containerStyle={{marginTop: 20}}
               textStyle={{marginHorizontal: 20, color: 'black'}}
             />
             <Button
-              text="Dark"
+              text="Button11"
               buttonStyle={{backgroundColor: 'rgba(39, 39, 39, 1)', width: null, height: 40}}
               containerStyle={{marginTop: 20}}
               textStyle={{color: 'white', marginHorizontal: 20}}
             />
             <Button
-              text="Default"
+              text="Button12"
               containerStyle={{marginTop: 20}}
               buttonStyle={{backgroundColor: 'rgba(78, 116, 289, 1)', width: null, height: 40}}
               textStyle={{color: 'white', marginHorizontal: 20}}
@@ -163,13 +165,13 @@ class Buttons extends Component {
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginBottom: 20}}>
             <Button
-              text="Secondary"
+              text="Button13"
               buttonStyle={{backgroundColor: 'rgba(127, 220, 103, 1)', width: null, height: 40}}
               containerStyle={{marginTop: 20}}
               textStyle={{color: 'white', marginHorizontal: 20}}
             />
             <Button
-              text="Danger"
+              text="Button14"
               buttonStyle={{backgroundColor: 'rgba(214, 61, 57, 1)', width: null, height: 40}}
               containerStyle={{marginTop: 20}}
               textStyle={{color: 'white', marginHorizontal: 20}}
@@ -177,10 +179,10 @@ class Buttons extends Component {
           </View>
           <View style={[styles.headerContainer, { backgroundColor: '#292C44'}]}>
             <Icon color="white" name="wrench" size={62} />
-            <Text style={styles.heading}>Button Groups</Text>
+            <Text style={styles.heading}>Button Group</Text>
           </View>
           <ButtonGroup
-            buttons={['SIMPLE', 'BUTTON', 'GROUP']}
+            buttons={['Radio1', 'Radio2', 'Radio3']}
             selectedIndex={this.state.selectedIndex}
             onPress={selectedIndex => {
               this.setState({ selectedIndex });
@@ -188,7 +190,7 @@ class Buttons extends Component {
             containerStyle={{ marginBottom: 20 }}
           />
           <ButtonGroup
-            buttons={['Multiple', 'Select', 'Button', 'Group']}
+            buttons={['Checkbox1', 'Checkbox2', 'Checkbox3', 'Checkbox4']}
             selectMultiple
             selectedIndexes={this.state.selectedIndexes}
             onPress={selectedIndexes => {

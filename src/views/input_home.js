@@ -23,11 +23,11 @@ class InputHome extends Component {
       <ScrollView style={styles.container} keyboardShouldPersistTaps="handled">
         <View style={styles.headerContainer}>
           <Icon color="white" name="search" size={62} />
-          <Text style={styles.heading}>Search Bars</Text>
+          <Text style={styles.heading}>Search View</Text>
         </View>
-        <SearchBar placeholder="iOS searchbar" platform="ios" {...dummySearchBarProps} />
-        <SearchBar placeholder="Android searchbar" platform="android" {...dummySearchBarProps} />
-        <SearchBar placeholder="Default searchbar" {...dummySearchBarProps} />
+        <SearchBar placeholder="iOS" platform="ios" {...dummySearchBarProps} />
+        <SearchBar placeholder="Android" platform="android" {...dummySearchBarProps} />
+        <SearchBar placeholder="Default" {...dummySearchBarProps} />
         <View style={[styles.headerContainer, {backgroundColor: '#616389', marginTop: 20}]}>
           <Icon color="white" name="input" size={62} />
           <Text style={styles.heading}>Inputs</Text>

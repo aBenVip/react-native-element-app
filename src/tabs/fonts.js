@@ -22,15 +22,15 @@ const FontsTab = StackNavigator({
     path: '/',
     navigationOptions: ({ navigation }) => ({
       title: 'Fonts',
-      headerLeft: (
-        <Icon
-          name="menu"
-          size={30}
-          type="entypo"
-          style={{ paddingLeft: 10 }}
-          onPress={() => navigation.navigate('DrawerOpen')}
-        />
-      ),
+      // headerLeft: (
+      //   <Icon
+      //     name="menu"
+      //     size={30}
+      //     type="entypo"
+      //     style={{ paddingLeft: 10 }}
+      //     onPress={() => navigation.navigate('DrawerOpen')}
+      //   />
+      // ),
     }),
   },
   Detail: {
